@@ -1,0 +1,11 @@
+<script>
+   function OpenWindow(url, windowName) {
+      newwindow = window.open('http://localhost/Script//sharer?url=' + url, windowName, 'height=1000,width=10000');
+      if (window.focus) {
+         newwindow.focus();
+      }
+      return false;
+   }
+   </script>     
+
+<button onclick="OpenWindow('http:/localhost/Script/')">Click me</button>
